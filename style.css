@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+header {
+   background-image: url('img/Capa\ header.jpg');
+   height: 340px;
+   background-position:center;
+   background-size: contain;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #32e0c4;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 900px;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #222831;
+    border-radius: 20px;
+    position: sticky;
+    z-index: 100;
+}   
+
+nav a {
+    color: #32e0c4;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: 2px solid #32e0c4;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #32e0c4;
+    color: #0d7377;
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px;
+    background-color: #393e46;
+}
+
+section h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #32e0c4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+section li{
+    color: #12a9ae;
+    font-weight: 900;
+}
+article {
+    background-color: #222831;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    color: #e0e0e0;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; 
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        font-size: 1rem; 
+        padding: 8px 15px;
+        margin: 5px 10px; 
+    }
+    section {
+        padding: 30px; 
+    }
+
+    article p {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; 
+        letter-spacing: 1px;
+    }
+
+    nav {
+        flex-direction: column; 
+    }
+
+    nav a {
+        width: 90%; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+
+    section {
+        padding: 20px; 
+    }
+    article p {
+        font-size: 0.9rem; 
+    }
+}
